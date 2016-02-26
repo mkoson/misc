@@ -1,0 +1,19 @@
+#installing mysql server on local Mac machine
+
+##install home-brew package manager
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+##install MySQL
+brew install MySQLdb
+
+##start MySQL, mount SQL DB
+mysql.server start
+
+##show databases
+show databases;
+
+##create databases;
+create new_database;
+
+##create database using existing .sql file;
+source /Users/username/documents/filename.sql
